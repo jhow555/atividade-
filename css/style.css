@@ -1,0 +1,31 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{  
+    grid-gap : 10px; /*deixa  espaço enytrr as divisoes*/
+    width: 100vww;
+    height: 100vh;
+    background-color:  yellow
+}
+
+.container{
+        grid-gap: 10px;
+        width:  100vw;
+        display: grid; /*comandos para reconhecer as parte*/ ;
+        grid-template-areas: 
+        "k k"              /*topo*/
+        "r l"              /*menu meio*/
+        "f f" ;            /*rodaepé*/
+        grid-template-columns : 1fr 4fr;
+        grid-template-rows : 1fr 4fr 1fr;
+}
+
+
+    .topo{
+    grid-area: k;
+    background-color: green;
+
+
+    }
